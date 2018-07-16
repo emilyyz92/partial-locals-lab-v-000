@@ -5,6 +5,6 @@ We now want to call all students in the class:
 <% if @classroom.students %>
   <% @classroom.students.each do |student| %>
   <% binding.pry %>
-    <%= render partial: 'students/student', locals: {student: student} %>
+  <%= render partial: 'students/student', locals: {student: student} %>
   <% end %>
 <% end %>
