@@ -18,5 +18,6 @@ class Classroom < ActiveRecord::Base
   end
 
   def students
+    students ? students : nil
   end
 end
