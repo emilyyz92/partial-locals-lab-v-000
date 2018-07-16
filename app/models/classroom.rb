@@ -17,7 +17,7 @@ class Classroom < ActiveRecord::Base
     students.where("birthday is not null").order("birthday asc").first
   end
 
-  def students
-    students ? students : nil
-  end
+  # def students
+  #   students ? students : nil
+  # end
 end
